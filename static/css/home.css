@@ -1,0 +1,602 @@
+.fs-14 {
+    font-size: 14px;
+}
+
+/* ============================================
+1.  home_div_1 Start
+============================================ */
+
+.form-inline input {
+    border: 0px;
+    border-radius: 0px;
+}
+.form-inline input:focus {
+    box-shadow: 0px 0px 0px 0px #fff;
+}
+
+.form-inline button {
+    border: 1px solid #fff;
+    border-radius: 0px;
+    background-color: #fff;
+    margin-left: -8px;
+    color: grey;
+}
+.form-inline button:hover {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: grey;
+}
+
+.navbar-brand {
+    font-size: 20px;
+}
+
+.home_div_1 .dv1 {
+    box-shadow: 0px 0px 10px 0px #ddd;
+    background-color: #fff;
+}
+
+.home_div_1 .dv1 .row .col-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.home_div_1 .dv1 .row .col-6 img {
+    height: 100px;
+    width: 100px;
+}
+
+.home_div_1 .dv1 span {
+    text-align: center;
+    color: #111;
+    font-size: 13px;
+}
+
+/* ============================================
+2.  Cart Start
+============================================ */
+
+#cart_page {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.card_heading {
+    border-left: 1px solid #eef;
+    border-top: 1px solid #eef;
+    border-right: 1px solid #eef;
+    border-radius: 0px;
+}
+.cart_body span {
+    font-size: 13px;
+}
+.card_content_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_content_btn button {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #5d5f60;
+}
+.card_content_btn button:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+.cart_card {
+    border-radius: 0px;
+    border: 1px solid #eef;
+}
+#place_order {
+    box-shadow: 4px 4px 6px 0px silver;
+    border: 1px solid #eef;
+    border: 0px;
+}
+.place_order_btn button {
+    border-radius: 0px;
+}
+.cart_offer {
+    display: none;
+}
+
+#cart_right {
+    position: fixed;
+    left: 81%;
+    top: 260px;
+    transform: translate(-50%, -50%);
+}
+#cart_right .card {
+    border: 0.8px solid #eef;
+    border-radius: 0px;
+}
+#cart_right .list-group-item {
+    border: 1px solid #eef;
+}
+
+@media (min-width: 320px) and (max-width: 480.99px) {
+    #cart_right {
+        width: 0px;
+    }
+    .cart_offer {
+        display: block;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767.99px) {
+    #cart_right {
+        display: none;
+    }
+    .cart_offer {
+        display: block;
+    }
+}
+
+/* login signup css */
+
+/* login */
+.login_signup_form .card-body input {
+    border-radius: 0px;
+    font-size: 14px;
+}
+
+.login_signup_form .card-body input:focus {
+    box-shadow: 0px 0px 0.5px 0px #ddd;
+}
+
+.login_signup_form .card-body label {
+    color: dimgrey;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.login_signup_form .card-body button {
+    background-color: #fb641b;
+    color: #fff;
+    border-radius: 0px;
+    border: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.login_signup_form .card-body p {
+    color: dimgrey;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.login_signup_form #login .card-body a {
+    color: #007bff;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.extra_sign_options .ddv {
+    border: 0.8px solid #ddd;
+    padding: 4px 6px;
+    text-align: center;
+}
+
+.ddv.text-danger {
+    border: 0.8px solid red;
+}
+
+.ddv.text-primary {
+    border: 0.8px solid #007bff;
+}
+
+.ddv.text-warning {
+    border: 0.8px solid #ffc107;
+}
+
+/* forgot_password */
+.login_signup_form #forgot_password_block .card-body input {
+    border-radius: 0px;
+    font-size: 14px;
+    border: 0.8px solid #ddd;
+}
+
+.login_signup_form #forgot_password_block .card-body input:focus {
+    box-shadow: 0px 0px 0.5px 0px #ddd;
+    border: 0.8px solid #ddd;
+}
+
+.login_signup_form #forgot_password_block .card-body button {
+    background-color: #fb641b;
+    color: #fff;
+    border-radius: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0px;
+}
+
+.display {
+    display: none;
+}
+
+/* ====================== Media Queries ==================== */
+@media (min-width: 320px) and (max-width: 999.99px) {
+    .md-none {
+        display: none;
+    }
+    .display {
+        display: block;
+    }
+}
+
+
+/* ===============================
+Profile Css
+=============================== */
+
+.form-control {
+    border-radius: 0px;
+}
+.form-control:focus {
+    box-shadow: 0px 0px 1px 0px silver;
+}
+
+.profile-header-left img {
+    border: 1px solid #f0f0f0;
+    border-radius: 50%;
+    padding: 5px;
+    width: 48px;
+}
+
+.profile-header-left span {
+    font-size: 12px;
+}
+.profile-header-left {
+    border-radius: 0px;
+    padding: 12px;
+    border: 0px;
+}
+.profile-section-left {
+    border: 0px;
+    border-radius: 0px;
+}
+
+.profile-section-left .nav-link {
+    border-top: 1px solid #f0f0f0;
+    font-size: 15px;
+    padding: 16px;
+    font-weight: normal;
+    color: gray;
+}
+
+.profile-section-left .nav-link img {
+    width: 20px;
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+
+.hv:hover {
+    color: #2874f2;
+}
+
+.profile-section-left a .arrow-icn {
+    color: grey;
+    font-size: 16px;
+    margin-top: 3px;
+    float: right;
+}
+
+.profile-account li {
+    list-style: none;
+    margin-left: 30px;
+    background-color: aqua;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.pa {
+    padding-left: 70px;
+    padding-top: 14px;
+    padding-bottom: 8px;
+    color: gray;
+    transition: 0.1s;
+}
+
+.pa:hover {
+    color: #2874f2;
+    text-decoration: none;
+    background-color: #f5faff;
+}
+
+.pa h6 {
+    font-size: 14px;
+}
+
+.color-g {
+    background-color: #f5faff;
+}
+
+.order-block {
+    border-radius: 0px;
+    padding: 22px;
+    border: 0px;
+}
+
+.order-block .card {
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    margin-top: 30px;
+    padding: 10px;
+}
+.order-block .card:hover {
+    text-decoration: none;
+    box-shadow: 3px 3px 7px 0px silver;
+}
+
+.order-block .card p {
+    font-size: 12px;
+    color: gray;
+}
+
+.order-block .card p {
+    font-size: 12px;
+    color: gray;
+}
+
+.profile-block {
+    padding: 35px;
+}
+
+.profile-block .form-control {
+    background: #fafafa;
+    padding: 10px 18px;
+}
+
+.stuff-block {
+    border-radius: 0px;
+    border: 0px;
+}
+
+.stuff-list a:hover {
+    text-decoration: none;
+    /*box-shadow: 1.5px 1.5px 5px 0px silver;*/
+    transition: 0.2s;
+    background-color: #f0f0f0;
+}
+
+.stuff-list a {
+    color: gray;
+    border-top: 1px solid #f0f0f0;
+    padding: 22px 13px;
+}
+
+.stuff-list a h5 {
+    color: #14171c;
+}
+
+.stuff-list a p {
+    font-size: 12px;
+}
+
+.deactivate-block {
+    border-radius: 0px;
+    border: 0px;
+    height: 400px;
+}
+.vender-block {
+    border-radius: 0px;
+    border: 0px;
+}
+
+#v-img {
+    margin-top: 30px;
+    width: 88%;
+}
+
+#v-body h5 {
+    font-size: 18px;
+}
+.vender-hover:hover {
+    box-shadow: 5px 5px 10px 2px #ddd;
+}
+/* ======================== Seller BLock ==============================*/
+.seller-block textarea {
+    height: 150px;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.seller-block input {
+    height: 30px;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.seller-block p {
+    color: gray;
+    font-size: 14px;
+}
+
+#business_details input {
+    border-right: 0px;
+}
+#business_details input:focus {
+    box-shadow: 0px 0px 0px 0px #fff;
+}
+
+#business_details #verify {
+    border-radius: 0px;
+    border-left: 0px;
+    border: 1px solid #ddd;
+    height: 30px;
+}
+
+.details_bottom h6 {
+    font-size: 14px;
+    color: dimgray;
+}
+.details_bottom p {
+    font-size: 13px;
+    color: gray;
+}
+.details_bottom input {
+    font-size: 13px;
+    height: 30px;
+}
+#bank_details p {
+    font-size: 12px;
+    color: gray;
+}
+.validpspantag{
+    font-size: 14px;
+    color: red;
+    display: none;
+    margin-left: 10px;
+}
+/* ============ Store details ============= */
+
+#store_details h6 {
+    font-size: 14px;
+    color: dimgray;
+}
+#store_details p {
+    font-size: 13px;
+    color: gray;
+}
+#store_details input {
+    font-size: 13px;
+    height: 30px;
+}
+
+/* ======================================
+    mobile profile
+====================================== */
+
+.nav_profile_shadow {
+    box-shadow: 0px 0px 0px 0px #fff;
+}
+.profile_mobile_fader .tablinks i {
+    font-size: 19px;
+    color: #fe1d5d;
+}
+.profile_mobile_fader .tablinks h6 {
+    font-size: 12px;
+}
+.profile_mobile_fader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    padding-top: 4px;
+    position: fixed;
+}
+
+.tabcontent {
+    margin-top: 52px;
+}
+
+#Profile {
+    display: none;
+}
+#MyAccount {
+    display: none;
+}
+#Notification {
+    display: none;
+}
+#Order {
+    display: none;
+}
+#Logout {
+    display: none;
+}
+#Deactivate {
+    display: none;
+}
+
+.i_block i {
+    font-size: 26px;
+    text-align: center;
+    margin-right: 8px;
+}
+.i_block h6{
+    margin-top: 2px;
+}
+
+/* ===================================================================== */
+
+#span_profile {
+    width: 98%;
+}
+
+#span_profile i {
+    font-size: 45px;
+    text-align: center;
+}
+#span_profile .user_up {
+    border: 2px solid #fe1d5d; 
+    width: 54px; 
+    height: 54px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#Profile_body {
+    padding-bottom: 20px;
+    border-radius: 0px;
+}
+
+#Profile_body label {
+    font-size: 11px;
+    color: grey;
+}
+#Profile_body input {
+    border: 0px;
+    width: 100%;
+    padding-left: 3px;
+    border-bottom: 1px solid #ddd;
+}
+#Profile_body input:focus {
+    transition: 0.4s linear;
+    border-bottom: 1.8px solid #fe1d5d;
+}
+.text-pink {
+    color: #fe1d5d;
+}
+
+#chng_pass_body{
+    border-radius: 0px;
+}
+#chng_pass_body label {
+    font-size: 11px;
+    color: grey;
+}
+#chng_pass_body input {
+    border: 0px;
+    width: 100%;
+    padding-left: 3px;
+    border-bottom: 1px solid #ddd;
+}
+#chng_pass_body input:focus {
+    transition: 0.4s linear;
+    border-bottom: 1.8px solid #fe1d5d;
+}
+
+#del_acc{
+    margin-bottom: 70px;
+}
+.pointer {
+    cursor: pointer;
+}
+#logo-img-1 {
+    width: 34px;
+}
+#logo-img-2 {
+    width: 62px;
+    margin-left: -8px;
+}

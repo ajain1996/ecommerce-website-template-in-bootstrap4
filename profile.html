@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Gupter|PT+Sans|PT+Sans+Narrow|Raleway|Roboto+Condensed|Source+Sans+Pro&display=swap" rel="stylesheet">
+
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        
+        <!-- Slick Slider CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin="anonymous" />
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous"/>
+        
+        <!-- Offline CSS -->
+        <link rel="stylesheet" href="static/css/home.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha256-qvCL5q5O0hEpOm1CgOLQUuHzMusAZqDcAZL9ijqfOdI=" crossorigin="anonymous" />
+        
+        <title>Profile page</title>
+        
+        
+    </head>
+    <body>
+        
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" style="background: #232f3e;">
+            <div class="container-fluid">
+                <a href="index.html" class="brand f-bold">
+                    <span class="text-white h5">Ark</span><span class="text-warning h5">hana</span>
+                </a>
+                
+                <form class="form-inline my-2 my-lg-0 col-md-6 col-lg-6 md-none ml-4">
+                    <input class="form-control mr-sm-2 col-md-10 col-lg-10" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-sm-0" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+                
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: 0px; outline: none; box-shadow: 0px 0px 0px 0px #fff;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link text-white mx-3" href="register.html">Login | Sign up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white mx-3" href="#">More</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white mx-3" href="cart.html">Cart</a>
+                        </li>
+                        <form class="form-inline my-2 my-lg-0 display">
+                            <input class="form-control mr-sm-2 col-12" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="bg-light">
+            <div class="col-md-11 mx-auto" style="margin-top: 80px;">
+                <div class="row" style="padding-top: 20px;">
+                    <div style="width: 25.5%;" class=" mr-auto">
+                        <div class="card profile-header-left shadow">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="static/img/profile/user-top.png">
+                                </div>
+                                <div class="col-md-9">
+                                    <span>Hello, Ankit</span>
+                                    <h6>Ankit Jain</h6>
+                                </div>
+                            </div>
+                            <hr class="mx-0 my-2">
+                            <div class="pl-2">
+                                <p class="m-0" style="font-size: 14px"><i class="fa fa-user mr-2 text-primary"></i>Please complete your profile</p>
+                                <div class="progress m-0" style="width:90%;height:7px">
+                                    <div class="progress-bar" style="width:30%;height:7px"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card profile-section-left mt-3 bg-white shadow">
+                            <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link profile-account text-muted">
+                                    <img src="static/img/profile/profile.png"> Account Settings
+
+                                    <a class="pa color-g active" id="profile-tab" data-toggle="pill" href="#profile" role="tab" aria-controls="profile" aria-selected="false" onclick="profilenavlist(this)"><h6>Profile Information</h6></a>
+                                    <a class="pa" id="profile-tab2" data-toggle="pill" href="#profile2" role="tab" aria-controls="profile" aria-selected="false" onclick="profilenavlist(this)"><h6>Other Information</h6></a>
+                                </a>
+                                <a class="nav-link hv">
+                                    <img src="static/img/profile/upload.png"> My Orders <i class="fa fa-chevron-right arrow-icn"></i>
+
+                                    <a class="pa" id="order-tab" data-toggle="pill" href="#order" role="tab" aria-controls="order" aria-selected="true" onclick="profilenavlist(this)"><h6>Orders</h6></a>
+                                </a>
+                                <a class="nav-link text-muted">
+                                    <img src="static/img/profile/stuff.png"> My Stuff <i class="fa fa-chevron-right arrow-icn"></i>
+                                    <a class="pa" id="messages-tab" data-toggle="pill" href="#messages" role="tab" aria-controls="messages" aria-selected="false" onclick="profilenavlist(this)"><h6>All Notifications</h6></a>
+                                </a>
+                                <a class="nav-link text-muted hv" href="#">
+                                    <img src="static/img/profile/logout.png">Logout <i class="fa fa-chevron-right arrow-icn"></i>
+                                </a>
+                                <a class="nav-link hv border-bottom" id="deact-tab" data-toggle="pill" href="#deact" role="tab" aria-controls="deact" aria-selected="true" onclick="profilenavlist(this)">
+                                    Deactivate Account
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-header-right ml-auto shadow" style="width: 73%;">
+                        <div class="tab-content" id="tabContent">
+                            <div class="tab-pane fade" id="order" role="tabpanel" aria-labelledby="order-tab">
+                                <div class="card order-block">
+                                    <h5 class="mb-3">My Orders</h5>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <a class="card p-0" href="#">
+                                                <div class="p-2 bg-light">
+                                                    Id Generated :
+                                                    <span class="bg-primary btn text-white ml-3" style="border-radius: 0px;">234543IDBGR00</span>
+                                                </div>
+                                                <div class="row" style="width: 98%; padding: 16px;">
+                                                    <div style="width: 100px;" class="px-3">
+                                                        <img src="static/img/clothing/1/i1.jpeg" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <h5>Color Block Men Round Neck Blue, White, Grey T-Shirt</h5> <span>$ 339</span>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <a class="card p-0" href="#">
+                                                <div class="p-2 bg-light">
+                                                    Id Generated :
+                                                    <span class="bg-primary btn text-white ml-3" style="border-radius: 0px;">234543IDBGR00</span>
+                                                </div>
+                                                <div class="row" style="width: 98%; padding: 16px;">
+                                                    <div style="width: 100px;" class="px-3">
+                                                        <img src="static/img/clothing/16/i1.jpeg" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <h5>Pixel 3 XL Second Impression: Notch City!</h5> <span>$ 339</span>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="col-md-12">
+                                            <a class="card p-0" href="#">
+                                                <div class="p-2 bg-light">
+                                                    Id Generated :
+                                                    <span class="bg-primary btn text-white ml-3" style="border-radius: 0px;">234543IDBGR00</span>
+                                                </div>
+                                                <div class="row" style="width: 98%; padding: 16px;">
+                                                    <div style="width: 100px;" class="px-3">
+                                                        <img src="static/img/clothing/4/i1.jpeg" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <h5>Striped Men Hooded Neck Grey, Black T-Shirt</h5> <span>$ 339</span>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="col-md-12">
+                                            <a class="card p-0" href="#">
+                                                <div class="p-2 bg-light">
+                                                    Id Generated :
+                                                    <span class="bg-primary btn text-white ml-3" style="border-radius: 0px;">234543IDBGR00</span>
+                                                </div>
+                                                <div class="row" style="width: 98%; padding: 16px;">
+                                                    <div style="width: 100px;" class="px-3">
+                                                        <img src="static/img/clothing/2/i1.jpeg" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <h5>Typography Men Hooded Neck Red T-Shirt</h5> <span>$ 339</span>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Personal Information -->
+                            <div class="tab-pane fade show active p-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="card p-4" id="profile_block">
+                                    <h6>Personal Information</h6>
+
+                                    <div class="row details_bottom mt-2">
+                                        <div class="col-md-6 border-right pr-4">
+                                            <div id="bank_details">
+                                                <div class="form-group row px-3">
+                                                    <h6>Full Name: </h6>
+                                                    <input type="text" class="form-control" id="profilename" placeholder="Enter full name" value="" required>
+                                                    <span class="validpspantag">Error</span>
+                                                </div>
+                                                <div class="form-group row px-3">
+                                                    <h6>Email address: </h6>
+                                                    <input type="email" class="form-control" id="profileemail" placeholder="Enter your e-mail" value="" required>
+                                                    <span class="validpspantag">Error</span>
+                                                </div>
+                                                <div class="form-group row px-3">
+                                                    <h6>Contact: </h6>
+                                                    <input type="number" class="form-control" id="profilecontact" placeholder="Enter phone number" value="" required>
+                                                    <span class="validpspantag">Error</span>
+                                                </div>
+                                                <button class="btn btn-primary col-md-6">Save</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 pl-4">
+                                            <h6>Don't have a bank account in the name of your business?</h6>
+
+                                            <p>We can only transfer payments to accounts which are in the registered business name. Please open a new bank account with any bank in your registered business name</p>
+
+                                            <h6>Don't have a verification document?</h6>
+
+                                            <p>You can get a cheque book, or the statement of your account from your bank. If neither of these are available, you can also ask the bank to issue a letter with your account number, IFSC code and name mentioned on it.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card p-4 mt-4" id="profile_block">
+                                    <h6>Change Password</h6>
+
+                                    <div class="row details_bottom mt-2">
+                                        <div class="col-md-6 border-right pr-4">
+                                            <div id="bank_details">
+                                                <div class="form-group row px-3">
+                                                    <h6>Old Password: </h6>
+                                                    <input type="password" id="profileoldpass" class="form-control" placeholder="Enter old password">
+                                                    <span class="validpspantag">Error</span>
+                                                </div>
+                                                <div class="form-group row px-3">
+                                                    <h6>New Password: </h6>
+                                                    <input type="password" id="profilenewpass" class="form-control" placeholder="Enter password">
+                                                    <span class="validpspantag">Error</span>
+                                                </div>
+                                                <div class="form-group row px-3">
+                                                    <h6>New Re-Password: </h6>
+                                                    <input type="password" id="profilerenewpass"  class="form-control" placeholder="Enter re-password">
+                                                    <span class="validpspantag">Error</span>
+                                                </div>
+                                               <button class="btn btn-primary col-md-6">Save</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 pl-4">
+                                            <h6>Don't have a bank account in the name of your business?</h6>
+
+                                            <p>We can only transfer payments to accounts which are in the registered business name. Please open a new bank account with any bank in your registered business name</p>
+
+                                            <h6>Don't have a verification document?</h6>
+
+                                            <p>You can get a cheque book, or the statement of your account from your bank. If neither of these are available, you can also ask the bank to issue a letter with your account number, IFSC code and name mentioned on it.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade p-4" id="profile2" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="card p-4" id="profile_block">
+                                    <h6>Complete Information</h6>
+
+                                    <div class="row details_bottom mt-2">
+                                        <div class="col-md-6 border-right pr-4">
+                                            <div id="bank_details">
+                                                <div class="form-group row px-3">
+                                                    <h6>City: </h6>
+                                                    <select class="form-control" id="compinfocity">
+                                                        <option value="0">Select car:</option>
+                                                        <option value="1">Audi</option>
+                                                        <option value="2">BMW</option>
+                                                        <option value="3">Citroen</option>
+                                                        <option value="4">Ford</option>
+                                                        <option value="5">Honda</option>
+                                                    </select>
+                                                    <span class="validpspantag">Error</span>
+                                                </div>
+                                                <div class="form-group row px-3">
+                                                    <h6>Pan Card No: </h6>
+                                                    <input type="text" id="compinfopancard" class="form-control" placeholder="Enter phone number" value="">
+                                                    <span class="validpspantag">Error</span>
+                                                </div>
+                                                <div class="form-group row px-3">
+                                                    <h6>Full Address: </h6>
+                                                    <textarea placeholder="Enter your description" value="" id="compinfoaddress" class="form-control fs-14" style="height: 120px;"></textarea>
+                                                    <span class="validpspantag">Error</span>
+                                                </div>
+                                               <button class="btn btn-primary col-md-6">Save</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 pl-4">
+                                            <h6>Don't have a bank account in the name of your business?</h6>
+
+                                            <p>We can only transfer payments to accounts which are in the registered business name. Please open a new bank account with any bank in your registered business name</p>
+
+                                            <h6>Don't have a verification document?</h6>
+
+                                            <p>You can get a cheque book, or the statement of your account from your bank. If neither of these are available, you can also ask the bank to issue a letter with your account number, IFSC code and name mentioned on it.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card p-4 mt-4" id="store_details">
+                                    <h6>Store Details</h6>
+                                    <p>Your store details will be displayed to the buyers when they browse your products:</p>
+
+                                    <div class="row">
+                                        <div class="col-md-6 border-right pr-4">
+                                            <div>
+                                                <div class="form-group row px-3">
+                                                    <h6>Company Name: </h6>
+                                                    <input id="companydetname" type="text" class="form-control" placeholder="Enter full name" value="">
+                                                    <span class="validpspantag">Error</span>
+                                                </div>
+                                                <div class="form-group row px-3">
+                                                    <h6>Description: </h6>
+                                                    <textarea id="companydetdesc" type="text" placeholder="Enter your description" value="" class="form-control fs-14" style="height: 120px;"></textarea>
+                                                    <span class="validpspantag">Error</span>
+                                                </div>
+                                                <button class="btn btn-primary col-md-6">Save</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 pl-4">
+                                            <p>Here is an example of how Store details will be displayed to the buyers :</p>
+
+                                            <div>
+                                                <img src="static/img/bg2.jpg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                                <div class="stuff-block card p-4">
+                                    <div class="pl-3">
+                                        <h5>Notifications</h5>
+                                    </div>
+                                    <div class="p-3 stuff-list">
+                                        <a class="row mx-auto" style="width: 102%;" href="#">
+                                            <div class="col-md-2">
+                                                <img src="static/img/clothing/3/i1.jpeg" class="img-fluid">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h5>Solid mens, black thirt Full sleeves Cotton, Fashion Wear</h5> <span>$ 339</span>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                                            </div>
+                                        </a>
+
+                                        <a class="row mx-auto" style="width: 102%;" href="#">
+                                            <div class="col-md-2">
+                                                <img src="static/img/clothing/5/i1.jpeg" class="img-fluid">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h5>Color Block Men Round Neck Blue, White, Grey T-Shirt</h5> <span>$ 339</span>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                                            </div>
+                                        </a>
+                                        
+                                        <a class="row mx-auto" style="width: 102%;" href="#">
+                                            <div class="col-md-2">
+                                                <img src="static/img/clothing/6/i1.jpeg" class="img-fluid">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h5>Striped Men Hooded Neck Grey, Black T-Shirt</h5> <span>$ 339</span>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                                            </div>
+                                        </a>
+                                        
+                                        <a class="row mx-auto" style="width: 102%;" href="#">
+                                            <div class="col-md-2">
+                                                <img src="static/img/clothing/2/i1.jpeg" class="img-fluid">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h5>Typography Men Hooded Neck Red T-Shirt</h5> <span>$ 339</span>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                                            </div>
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="deact" role="tabpanel" aria-labelledby="deact-tab">
+                                <div class="deactivate-block card p-4">
+                                    <div class="">
+                                        <p>Do you want to deativate your account</p>
+
+                                        <a href="#" class="btn btn-primary">Deactivate</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha256-251s88HEsEfGL2RufZmRwGohKTHDYr9T+aJAazDwlGY=" crossorigin="anonymous"></script>
+        
+    </body>
+</html>

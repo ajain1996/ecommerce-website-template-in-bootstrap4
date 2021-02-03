@@ -1,0 +1,35 @@
+.carousel-wrap {
+  margin: 30px auto;
+  width: 96%;
+  position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+  position: relative;
+  z-index: 100; 
+  -webkit-backface-visibility: hidden; 
+}
+
+/* end fix */
+.navtext {
+    margin-top: -26px;
+    position: absolute;
+    top: 46%;
+    color: #1d1f21;
+    background-color: #fff;
+    padding: 18px 13px;
+    box-shadow: 0.5px 0.5px 4px 1px #ddd;
+}
+
+.owl-nav i {
+  font-size: 52px;
+}
+
+.fa-caret-left {
+  left: -30px;
+}
+
+.fa-caret-right {
+  right: -30px;
+}
